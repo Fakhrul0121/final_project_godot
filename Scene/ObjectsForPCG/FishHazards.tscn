@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm2ombvocd5ot"]
+
+[ext_resource type="PackedScene" uid="uid://b4oxfl2msl6e6" path="res://Entities/Enemies/Chomper.tscn" id="2_qdsqh"]
+
+[node name="FishHazards" type="Node2D"]
+
+[node name="Chomper" parent="." instance=ExtResource("2_qdsqh")]
+position = Vector2(-8, 0)

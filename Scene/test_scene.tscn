@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://qpfoktl2sddh"]
+
+[ext_resource type="Script" uid="uid://cq1cjnx0udma8" path="res://Scripts/ProceduralLevelGeneration/PCG_terrain.gd" id="1_bby6a"]
+[ext_resource type="Script" uid="uid://come0ejj62jv3" path="res://Scripts/ProceduralLevelGeneration/PCG_figure.gd" id="2_wqv7g"]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="Node" type="Node2D" parent="."]
+script = ExtResource("1_bby6a")
+terrain_size = 12
+single_incline_frequency = 3
+single_downcline_frequency = 3
+max_height_constraint = 10
+min_height_constraint = -5
+preferred_speedup_value = 4
+preferred_speeddown_value = -4
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("2_wqv7g")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1ae4p6wvbdhg"]
+
+[ext_resource type="PackedScene" uid="uid://bggwureiae5pu" path="res://Scene/ObjectsForPCG/SpringYellowRight.tscn" id="1_x4liq"]
+[ext_resource type="Texture2D" uid="uid://cuu21do1tbcm3" path="res://Graphics/Gimmicks/springs_red.png" id="2_tac2t"]
+
+[node name="SpringRedRight" instance=ExtResource("1_x4liq")]
+type = 1
+
+[node name="Spring" parent="." index="2"]
+texture = ExtResource("2_tac2t")

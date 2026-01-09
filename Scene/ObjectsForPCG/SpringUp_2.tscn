@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3al6yo431mft"]
+
+[ext_resource type="PackedScene" uid="uid://4q0hpddgto2k" path="res://Entities/Gimmicks/Spring.tscn" id="1_74bfu"]
+
+[node name="Spring_Up" instance=ExtResource("1_74bfu")]
+position = Vector2(-8, 0)

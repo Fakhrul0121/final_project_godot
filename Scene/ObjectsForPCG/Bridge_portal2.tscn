@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://p167wwx2fpf6"]
+
+[ext_resource type="PackedScene" uid="uid://bg66ofhfkxsx6" path="res://Entities/Gimmicks/Bridge.tscn" id="1_faskc"]
+
+[node name="FishHazards" type="Node2D"]
+
+[node name="Bridge" parent="." instance=ExtResource("1_faskc")]
+length = 10
