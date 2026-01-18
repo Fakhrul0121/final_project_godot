@@ -8,7 +8,6 @@ extends TileMap
 const POPULATION_SIZE := 100
 const GENERATIONS := 20
 const CHROMOSOME_LENGTH := 20
-
 const GENERIC_TERRAINS = [105, 104, 101, 102, 103] #turunan 2x lebih lancip, turunan, datar, tanjakan, tanjakan 2x lebih lancip
 const SET_PIECES = [201, 202, 203]
 
