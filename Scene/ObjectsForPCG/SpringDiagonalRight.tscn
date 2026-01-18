@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx5fjpr036d62"]
+
+[ext_resource type="PackedScene" uid="uid://4q0hpddgto2k" path="res://Entities/Gimmicks/Spring.tscn" id="1_toi38"]
+
+[node name="SpringDiagonalRight" instance=ExtResource("1_toi38")]
+position = Vector2(8, -8)
+springDirection = 4
+
+[node name="HitBox" parent="." index="0"]
+disabled = true
+
+[node name="AreaShape" parent="DiagonalHitBox" index="0"]
+disabled = false
+
+[node name="Spring" parent="." index="2"]
+region_rect = Rect2(128, 16, 32, 32)

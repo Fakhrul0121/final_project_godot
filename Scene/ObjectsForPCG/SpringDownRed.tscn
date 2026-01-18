@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm4aq47o6npa4"]
+
+[ext_resource type="PackedScene" uid="uid://4q0hpddgto2k" path="res://Entities/Gimmicks/Spring.tscn" id="1_ed5qj"]
+[ext_resource type="Texture2D" uid="uid://cuu21do1tbcm3" path="res://Graphics/Gimmicks/springs_red.png" id="2_5ovjf"]
+
+[node name="Spring_Up" instance=ExtResource("1_ed5qj")]
+position = Vector2(-8, 0)
+scale = Vector2(1, -1)
+type = 1
+springDirection = 1
+
+[node name="Spring" parent="." index="2"]
+texture = ExtResource("2_5ovjf")

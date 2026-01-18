@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bggwureiae5pu"]
+
+[ext_resource type="PackedScene" uid="uid://4q0hpddgto2k" path="res://Entities/Gimmicks/Spring.tscn" id="1_babxx"]
+
+[node name="SpringYellowRight" instance=ExtResource("1_babxx")]
+position = Vector2(0, -8)
+springDirection = 2
+
+[node name="HitBox" parent="." index="0"]
+rotation = 1.5708
+
+[node name="Spring" parent="." index="2"]
+region_rect = Rect2(80, 16, 16, 32)

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bceow1no8svmg"]
+
+[ext_resource type="PackedScene" uid="uid://bg66ofhfkxsx6" path="res://Entities/Gimmicks/Bridge.tscn" id="1_d4nif"]
+[ext_resource type="PackedScene" uid="uid://b4oxfl2msl6e6" path="res://Entities/Enemies/Chomper.tscn" id="2_dhdjw"]
+
+[node name="FishHazards" type="Node2D"]
+
+[node name="Bridge" parent="." instance=ExtResource("1_d4nif")]
+
+[node name="Chomper2" parent="." instance=ExtResource("2_dhdjw")]
+position = Vector2(128, 40)
+
+[node name="Chomper" parent="." instance=ExtResource("2_dhdjw")]
+position = Vector2(48, 40)

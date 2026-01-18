@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://d336g62paqn66"]
+
+[ext_resource type="Script" uid="uid://dww0a0qieaddw" path="res://Scripts/Objects/Platform.gd" id="1_nwd7d"]
+[ext_resource type="Script" uid="uid://bqg7vlrfr3txv" path="res://Scripts/Objects/PlatformChild.gd" id="2_xawj8"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+resource_local_to_scene = true
+size = Vector2(80, 2)
+
+[node name="FallingPlatform" type="Node2D"]
+process_priority = 10
+position = Vector2(40, 16)
+script = ExtResource("1_nwd7d")
+endPosition = Vector2(0, 0)
+fallTimer = 1.0
+
+[node name="Platform" type="AnimatableBody2D" parent="."]
+process_priority = 10
+collision_layer = 8193
+collision_mask = 0
+script = ExtResource("2_xawj8")
+
+[node name="Shape3D" type="CollisionShape2D" parent="Platform"]
+modulate = Color(1, 1, 1, 0.0980392)
+position = Vector2(0, -14)
+shape = SubResource("1")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Platform"]
